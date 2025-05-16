@@ -1,0 +1,51 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2020-10-11T11:58:04+0530",
+ "nonVisible": "true",
+ "iconName": "https://community.niotron.com/user_avatar/community.niotron.com/techno_vedang/25/312_2.png",
+ "methods": [{
+  "deprecated": "false",
+  "name": "Register",
+  "description": "Register Component For click",
+  "params": [
+   {
+    "name": "component",
+    "type": "component"
+   },
+   {
+    "name": "id",
+    "type": "number"
+   }
+  ]
+ }],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "in.vedang.clicktool.ClickTools",
+ "androidMinSdk": 7,
+ "version": "1",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "ClickTools",
+ "helpString": "Made By Techno Vedang AKA developer vedang",
+ "properties": [],
+ "events": [
+  {
+   "deprecated": "false",
+   "name": "OnComponentClick",
+   "description": "Event for component click",
+   "params": [{
+    "name": "id",
+    "type": "number"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "OnError",
+   "description": "Event for error",
+   "params": [{
+    "name": "error",
+    "type": "text"
+   }]
+  }
+ ]
+}]

@@ -1,0 +1,397 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2022-10-15T11:51:10+0200",
+ "nonVisible": "true",
+ "iconName": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAABI0lEQVQ4T2P8DwQMFAAmKE02oKYBTxhmH/BlUN4EwVjB5zUM/pv6oBwoAIUBCOw94/Nfaf/q//dAnE+r//ttzAOLIwOwmo29UB4EQA048b8UqGHWJwgPK3jWC9TsAzQY1QCIFz4/ZrjJIM+gzAvmYQFPGJRP72eY7RgP5SMAxIAvjxiuMOxnYLiVDw+DsudgGTC4f6ubQUdjOoMTlI8MUGJhIkMpw12/zQx3TR0Z1p7Oh4qeZHC5cY9hgpoMlI8KUAyAK5IMAxL3wEzlTS0MwaabGRTBPAjYB6VBAGIAjxyYug8mUUEwEK89DY3e/QvBXk1FjmZoYEJC+OZjCAcc4qihDQbg6MUWC0Bw1286w5UbmRCbgCEebFoElcEPhnxmYmAAAMMD7VhfWS88AAAAAElFTkSuQmCC",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "Base64ToImage",
+   "description": "Base 64 string to Image component.",
+   "params": [
+    {
+     "name": "base64Data",
+     "type": "text"
+    },
+    {
+     "name": "image",
+     "type": "component"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "Base64ToString",
+   "description": "String Base 64 to String. Decode Base 64 to string. (Encode with block 'StringToBase64').",
+   "params": [{
+    "name": "base64",
+    "type": "text"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "CanvasToBase64",
+   "description": "Canvas Image to Base 64.",
+   "params": [{
+    "name": "canvas",
+    "type": "component"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "CopyToASD",
+   "description": "Copy a file from path to ASD. Example: pathFile: /storage/emulated/0/my_file.txt destFile: /my_file_in_ASD.txt, that will copy my_file.txt into: /storage/emulated/0/Android/data/<namepackage>/files/my_file_in_ASD.txt",
+   "params": [
+    {
+     "name": "pathFile",
+     "type": "text"
+    },
+    {
+     "name": "destFile",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "CreateDirectory",
+   "description": "Create a directory. Start with /, example: /mydirectory, create a directory in /mnt/sdcard/mydirectory",
+   "params": [{
+    "name": "directory",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "CreateDirectoryASD",
+   "description": "Create a directory. Start with /, example: /mydirectory, create a directory in /storage/emulated/0/Android/data/<namepackage>/files/mydirectory",
+   "params": [{
+    "name": "directory",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "DeleteDirectory",
+   "description": "Delete a directory. Start with /, example: /mydirectory, delete directory /mnt/sdcard/mydirectory",
+   "params": [{
+    "name": "directory",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "DeleteDirectoryASD",
+   "description": "Delete a directory. Start with /, example: /mydirectory, delete directory /storage/emulated/0/Android/data/<namepackage>/files/mydirectory",
+   "params": [{
+    "name": "directory",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "DeleteFile",
+   "description": "Delete a file. Set absolute address, example: /storage/emulated/0/Android/data/<namepackage>/files/myfile.txt",
+   "params": [{
+    "name": "pathFile",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "DownloadFile",
+   "description": "Download file from web to directory, example, address: http://mydomain.com/myfile.jpg destination: /mydirectory. Not return event.",
+   "params": [
+    {
+     "name": "address",
+     "type": "text"
+    },
+    {
+     "name": "destination",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "DownloadFileASD",
+   "description": "Download file from web to a directory, example, address: http://mydomain.com/myfile.jpg destination: /mydirectory. Download in:  /storage/emulated/0/Android/data/<namepackage>/files/mydirectory. Not return event.",
+   "params": [
+    {
+     "name": "address",
+     "type": "text"
+    },
+    {
+     "name": "destination",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "DownloadFileToASD",
+   "description": "Download file from web to ASD, example, address: http://mydomain.com/myfile.jpg fileName: /myfile.txt. Not return event.",
+   "params": [
+    {
+     "name": "address",
+     "type": "text"
+    },
+    {
+     "name": "fileName",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "FileExists",
+   "description": "Check if file exists. Set absolute address, example: /storage/emulated/0/Android/data/<namepackage>/files/myfile.txt Return true or false.",
+   "params": [{
+    "name": "pathFile",
+    "type": "text"
+   }],
+   "returnType": "boolean"
+  },
+  {
+   "deprecated": "false",
+   "name": "FileToString",
+   "description": "Convert File to String Base64. filePath: Absolute address, start with /. Example:/storage/emulated/0/Android/data/<namepackage>/files/myFile.txt. To read assets packaged with an application (also works for the Companion) start just file name with // (two slashes).",
+   "params": [{
+    "name": "filePath",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "FileToStringASD",
+   "description": "Convert File to String Base64. Prefix the filename with / to read from a specific file on the SD card (for example: /image.png will read the file /storage/emulated/0/Android/data/<namepackage>/files/image.png). To read assets packaged with an application (also works for the Companion) start the filename with // (two slashes).",
+   "params": [{
+    "name": "fileName",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "FileToStringDirect",
+   "description": "Convert File to String Base64. Set absolute address, example: /storage/emulated/0/Pictures/my_picture.png",
+   "params": [{
+    "name": "pathFile",
+    "type": "text"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "GetApi",
+   "description": "Get API.",
+   "params": [],
+   "returnType": "number"
+  },
+  {
+   "deprecated": "false",
+   "name": "GetAsdPath",
+   "description": "Get App Specific Directory path (ASD). Example: /storage/emulated/0/Android/data/<namepackage>/files",
+   "params": [],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "GetMimeType",
+   "description": "Get mime type by extension. Write file extension, example: png or file name, example: image.png",
+   "params": [{
+    "name": "fileExtension",
+    "type": "text"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "GetSdkCodeName",
+   "description": "Get SDK code name.",
+   "params": [],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "ImageToBase64",
+   "description": "Image picture to Base 64.",
+   "params": [{
+    "name": "image",
+    "type": "component"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "StringToBase64",
+   "description": "Base 64 to String. Encode string to Base 64 (Decode with block 'Base64ToString').",
+   "params": [{
+    "name": "string",
+    "type": "text"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "StringToFile",
+   "description": "String Base 64 to File. Name file must begins with a slash (/), the file is written to the sdcard (for example, writing to /myFile.txt will write the file to /sdcard/myFile.txt).",
+   "params": [
+    {
+     "name": "string",
+     "type": "text"
+    },
+    {
+     "name": "fileName",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "StringToFileASD",
+   "description": "String Base 64 to File. Name file must begins with a slash (/), the file is written to the sdcard (for example, writing to /myFile.txt will write the file to /storage/emulated/0/Android/data/<namepackage>/files/myFile.txt Return: /myFile.txt).",
+   "params": [
+    {
+     "name": "string",
+     "type": "text"
+    },
+    {
+     "name": "fileName",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "StringToFileASDAsyn",
+   "description": "Run asynchronously. String Base 64 to File. Name file must begins with a slash (/), the file is written to the sdcard (for example, writing to /myFile.txt will write the file to /storage/emulated/0/Android/data/<namepackage>/files/myFile.txt).",
+   "params": [
+    {
+     "name": "string",
+     "type": "text"
+    },
+    {
+     "name": "fileName",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "deprecated": "false",
+   "name": "StringToFileASDDirect",
+   "description": "String Base 64 to File. Name file must begins with a slash (/), the file is written to the sdcard (for example, writing to /myFile.txt will write the file to /storage/emulated/0/Android/data/<namepackage>/files/myFile.txt).",
+   "params": [
+    {
+     "name": "string",
+     "type": "text"
+    },
+    {
+     "name": "fileName",
+     "type": "text"
+    }
+   ],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "TakePictureToBase64",
+   "description": "Takes Thumbnail Picture with Camera and returns base64 string",
+   "params": []
+  },
+  {
+   "deprecated": "false",
+   "name": "UriToPath",
+   "description": "Convert string resultUri to path of file.",
+   "params": [{
+    "name": "resultUri",
+    "type": "text"
+   }],
+   "returnType": "text"
+  },
+  {
+   "deprecated": "false",
+   "name": "WebFileToString",
+   "description": "Download web small file and convert it to String. Example: http://mydomain.com/myfile.jpg",
+   "params": [{
+    "name": "fileWeb",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "WebFileToStringASD",
+   "description": "Download web small file and convert it to String. Example: http://mydomain.com/myfile.jpg Event: GotStringFromWebFile.",
+   "params": [{
+    "name": "fileWeb",
+    "type": "text"
+   }]
+  }
+ ],
+ "blockProperties": [],
+ "helpUrl": "",
+ "licenseName": "",
+ "type": "com.KIO4_Base64.KIO4_Base64",
+ "androidMinSdk": 7,
+ "version": "2",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "KIO4_Base64",
+ "helpString": "Convert file to string in Base 64 and string in Base 64 to file. Get mime type of a file. Juan Antonio Villalpando - KIO4.COM",
+ "properties": [],
+ "events": [
+  {
+   "deprecated": "false",
+   "name": "AfterCanvasBase64",
+   "description": "This event is fired by block CanvasToBase64. The text argument `base64Data` is the base64 string of the image in Canvas.",
+   "params": [{
+    "name": "base64Data",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "AfterImageBase64",
+   "description": "This event is fired by block ImageToBase64. The text argument `base64Data` is the base64 string of the picture in Image.",
+   "params": [{
+    "name": "base64Data",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "AfterPictureBase64",
+   "description": "This event is fired by block TakePictureToBase64. The text argument `base64Data` is the base64 string of the image.",
+   "params": [{
+    "name": "base64Data",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "GotFile",
+   "description": "This event is fired by blocks StringToFile, StringToFileASD and StringToFileASDAsyn.",
+   "params": [{
+    "name": "file",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "GotString",
+   "description": "This event is fired by blocks FileToString and FileToStringASD.",
+   "params": [{
+    "name": "string",
+    "type": "text"
+   }]
+  },
+  {
+   "deprecated": "false",
+   "name": "GotStringFromWebFile",
+   "description": "This event is fired by block WebFileToStringASD.",
+   "params": [{
+    "name": "string",
+    "type": "text"
+   }]
+  }
+ ]
+}]

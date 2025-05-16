@@ -1,0 +1,63 @@
+[{
+ "categoryString": "EXTENSION",
+ "dateBuilt": "2023-08-13T16:56:49+0000",
+ "nonVisible": "true",
+ "iconName": "file:///c:/_d/pgm/android23/icon.png",
+ "methods": [
+  {
+   "deprecated": "false",
+   "name": "Regexp",
+   "description": "Searching text based on regular expression",
+   "params": [
+    {
+     "name": "text",
+     "type": "text"
+    },
+    {
+     "name": "pattern",
+     "type": "text"
+    },
+    {
+     "name": "mode",
+     "type": "number"
+    },
+    {
+     "name": "start",
+     "type": "number"
+    }
+   ],
+   "returnType": "list"
+  },
+  {
+   "deprecated": "false",
+   "name": "RegexpReplace",
+   "description": "Replacement in text based on regular expression",
+   "params": [
+    {
+     "name": "text",
+     "type": "text"
+    },
+    {
+     "name": "pattern",
+     "type": "text"
+    },
+    {
+     "name": "replacement",
+     "type": "text"
+    }
+   ],
+   "returnType": "text"
+  }
+ ],
+ "blockProperties": [],
+ "helpUrl": "",
+ "type": "fr.danielm.Xreg.Xreg",
+ "androidMinSdk": 7,
+ "version": "4",
+ "external": "true",
+ "showOnPalette": "true",
+ "name": "Xreg",
+ "helpString": "Reguler Expressions",
+ "properties": [],
+ "events": []
+}]
