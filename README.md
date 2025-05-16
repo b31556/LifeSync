@@ -7,8 +7,6 @@
 
 **Presentation:** (https://docs.google.com/presentation/d/1pGS-WjRnOgouWeoJCREpAoTE3X_NyHj7/edit?usp=drive_link&ouid=111396547087337399273&rtpof=true&sd=true)
 
-**Live Demo Video:**  
-[![Watch the demo](https://img.youtube.com/vi/Yez1MNGgnu4/0.jpg)](https://youtu.be/Yez1MNGgnu4)
 
 ---
 
